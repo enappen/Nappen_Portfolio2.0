@@ -1,6 +1,16 @@
-/* CSS written by Emily Nappen */
+/* CSS by Emily Nappen */
 
+/* --- Color Palette --- 
 
+    White: #F0F1F2
+    Black: #0D0D0D
+    Light Sky Blue: #96bcd3
+    Sky Blue: #9BCAF2
+    Warm Tan: #F2D6B3
 
-/* Global Styles (MOBILE FIRST) */
+*/
 
+/* Global Styles (base) MOBILE FIRST */
+body {
+    background-color: #F0F1F2;
+}
