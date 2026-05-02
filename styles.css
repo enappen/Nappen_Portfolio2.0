@@ -13,4 +13,75 @@
 /* Global Styles (base) MOBILE FIRST */
 body {
     background-color: #F0F1F2;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+}
+
+header, nav, footer {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 0.5px;
+    flex: 1;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color:#F0F1F2;
+    font-weight: bold;
+    background-color: #87bceb;
+    padding: 0.5rem;
+    display: block;
+}
+
+main {
+    background-color: #F2D6B3;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#logo {
+    padding: 0.5rem;
+    max-width: 8rem;
+    margin: 1rem;
+}
+
+#banner {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+#banner-text {
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+.card-row {
+    margin: 2rem;
+}
+.card {
+    flex: 1 1 300px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+    background-color: #F0F1F2;
+}
+.card img {
+    width: 300px; 
+    object-position: center;
 }
