@@ -22,6 +22,21 @@ header, nav, footer {
     text-align: center;
 }
 
+main {
+    background-color: #F2D6B3;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#logo {
+    padding: 0.5rem;
+    max-width: 8rem;
+    margin: 1rem;
+}
+
+/* --- Navigation --- */
 nav ul {
     list-style: none;
     margin: 0;
@@ -44,20 +59,9 @@ nav a {
     display: block;
 }
 
-main {
-    background-color: #F2D6B3;
-}
 
-h1 {
-    font-size: 2rem;
-}
 
-#logo {
-    padding: 0.5rem;
-    max-width: 8rem;
-    margin: 1rem;
-}
-
+/* --- Banner --- */
 #banner {
     max-width: 100%;
     height: auto;
@@ -70,6 +74,7 @@ h1 {
     padding: 1rem;
 }
 
+/* --- Card Row --- */
 .card-row {
     margin: 2rem;
 }
