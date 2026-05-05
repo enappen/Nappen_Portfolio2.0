@@ -5,7 +5,7 @@
     White: #F0F1F2
     Black: #0D0D0D
     Light Sky Blue: #96bcd3
-    Sky Blue: #9BCAF2
+    Sky Blue: #87bceb
     Warm Tan: #F2D6B3
 
 */
@@ -16,6 +16,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header, nav, footer {
@@ -26,9 +27,10 @@ header, nav, footer {
 header {
     display: flex;
     justify-content: space-between;
-    margin: 0.75rem;
     padding-top: 0.5rem;
     align-items: center;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
 }
 #logo {
     padding: 0.5rem;
@@ -62,7 +64,6 @@ nav ul {
 }
 nav ul li {
     justify-content: space-between;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     letter-spacing: 0.5px;
     flex: 1;
     text-align: center;
@@ -82,12 +83,14 @@ nav a:hover {
 }
 
 /* Footer Elements */
-#social-media img {
-    max-width: 40px;
-    padding: 1rem;
+.social-media img {
+    max-width: 30px;
+    padding: 0.5rem;
 }
 footer {
     background-color: #87bceb;
+    color: rgb(15, 63, 151);
+    font-weight: 500;
 }
 
 /* Contact Elements */
@@ -99,7 +102,9 @@ footer {
 /* --- Banner --- */
 #banner-container {
     align-items: center;
-        background-color: white;
+    background-color: white;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
 }
 #banner {
     width: 100%;
@@ -115,36 +120,52 @@ footer {
 
 /* --- Card Row --- */
 .card-row {
-    margin: 2rem;
+    margin: 1rem;
+    background-color: #F0F1F2;
+    padding: 1rem;   
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .card {
     flex: 1 1 300px;
     padding: 1.5rem;
-    max-width: 300px;
+    max-width: 250px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-    margin: 2rem;
+    margin: 1rem;
     background-color: #F0F1F2;
 }
 .card img {
-    width: 300px; 
+    width: 250px; 
     object-position: center;
+}
+.card-row a {
+    text-decoration: none;
+    color: black;
+}
+.card:hover {
+    box-shadow: 5px 10px 20px #87bceb;
 }
 
 /* About Me */
 #about-me {
     padding: 2rem;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #F0F1F2;
 }
 #self {
     max-width: 300px;
 }
 
 /* Contact */
+#Contact {
+    background-color: #F0F1F2;
+    padding: 1rem;
+}
 #social-feature {
     max-width: 55px;
 }
 
 /* Holiday in the Breezeway Project */
-#HitB-packages {
+#HitB-packages, .Promo {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -160,15 +181,37 @@ footer {
 #staged-content {
     display: grid;
 }
-#staged-content img{
+#staged-content img {
     max-width: 340px;
     width: 100%;
     height: auto; 
 }
 
+/*  */
+.Promo-Concepts {
+    flex: 1 1 150px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* Project Case Study Page Format */
+.project-page {
+    background-color: #F0F1F2;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    max-width: 100%;
+}
+.project-page img {
+    max-width: 100%;
+}
+.project-page section {
+    margin: 1rem;
+}
+
 /* FieldHaven */
-#FH-strategy {
-    max-width: 400px;
+#sm-strategy, #sm-results {
+    max-width: 700px;
     width: 100%;
     height: auto;
 }
@@ -178,6 +221,28 @@ footer {
     max-width: 500px;
     width: 100%;
     height: auto;  
+}
+
+/* At Height Images */
+#AHI-brainstorming{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+#AHI-branding {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+#AHI-branding img {
+    flex: 0 0 50%;
+    max-width: 300px;
+    height: auto;
+}
+#AHI-brandguide1 {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 1000px) {
