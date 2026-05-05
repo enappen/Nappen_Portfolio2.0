@@ -26,6 +26,9 @@ header, nav, footer {
 header {
     display: flex;
     justify-content: space-between;
+    margin: 0.75rem;
+    padding-top: 0.5rem;
+    align-items: center;
 }
 #logo {
     padding: 0.5rem;
@@ -37,6 +40,10 @@ header {
 /* Main Elements*/
 main {
     background-color: #F2D6B3;
+    padding: 1rem;
+}
+#HitB-main {
+    padding: 1rem;
 }
 
 h1 {
@@ -51,6 +58,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #87bceb;    
 }
 nav ul li {
     justify-content: space-between;
@@ -67,19 +75,32 @@ nav a {
     padding: 0.5rem;
     display: block;
 }
+nav a:hover {
+    background-color: #F0F1F2;
+    color: #87bceb;
+    border: 2px solid #87bceb;
+}
 
+/* Footer Elements */
 #social-media img {
     max-width: 40px;
     padding: 1rem;
 }
+footer {
+    background-color: #87bceb;
+}
 
+/* Contact Elements */
 .social-feature {
     max-width: 55px;
     padding: 1rem;
 }
 
-
 /* --- Banner --- */
+#banner-container {
+    align-items: center;
+        background-color: white;
+}
 #banner {
     width: 100%;
     max-width: 573px;
@@ -89,7 +110,6 @@ nav a {
 #banner-text {
     text-align: center;
     justify-content: center;
-    background-color: white;
     padding: 1rem;
 }
 
@@ -121,6 +141,43 @@ nav a {
 /* Contact */
 #social-feature {
     max-width: 55px;
+}
+
+/* Holiday in the Breezeway Project */
+#HitB-packages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+#HitB-packages img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+#staged-content {
+    display: grid;
+}
+#staged-content img{
+    max-width: 340px;
+    width: 100%;
+    height: auto; 
+}
+
+/* FieldHaven */
+#FH-strategy {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+/* SCAC Art Radio Logo */
+#SCAC-concepts {
+    max-width: 500px;
+    width: 100%;
+    height: auto;  
 }
 
 @media screen and (min-width: 1000px) {
