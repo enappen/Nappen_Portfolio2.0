@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="images/Nappen_Logo_RGB.png" alt="Emily Nappen Logo with cat jumping over name." id="logo">
+        <a href="index.html"><img src="images/Nappen_Logo_RGB.png" 
+            alt="Emily Nappen Logo with cat jumping over name." 
+            id="logo"></a>
         <h1>Portfolio</h1>
     </header>
     <nav>
@@ -20,28 +22,32 @@
         </ul>
     </nav> 
     <main>
-        <section id="Contact">
+        <div id="Contact">
             <h2>Contact Me</h2>
-            <section>
-                <h3>Let's Chat!</h3>
-                <p>emilynappen@gmail.com</p>
-                <hr>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/emilynappen/"><img src="images/Sm-Logos/Linkedin_logo.png" alt="LinkedIn Logo"></a>
-                    <a href="https://asu.joinhandshake.com/profiles/enappen"><img src="images/Sm-Logos/Handshake_Logo.png" alt="Handshake Logo"></a>
-                    <a href="https://www.instagram.com/emi4design/"><img src="images/Sm-Logos/Instagram_Logo.png" alt="Instagram Logo"></a>
-                    <a href="https://github.com/enappen"><img src="images/Sm-Logos/GitHub_Logo.png" alt="GitHub Logo"></a>
-                </div>
-            </section>
-        </section>
+            <div id="contact-containers">
+                <div>
+                    <h3>Let's<br>Chat!</h3>
+                </div>    
+                <div id="Contact-Info">
+                    <p>emilynappen@gmail.com</p>
+                    <hr>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/emilynappen/"><img src="images/Sm-Logos/Linkedin_logo.png" alt="LinkedIn Logo"></a>
+                        <a href="https://asu.joinhandshake.com/profiles/enappen"><img src="images/Sm-Logos/Handshake_Logo.png" alt="Handshake Logo"></a>
+                        <a href="https://www.instagram.com/emi4design/"><img src="images/Sm-Logos/Instagram_Logo.png" alt="Instagram Logo"></a>
+                        <a href="https://github.com/enappen"><img src="images/Sm-Logos/GitHub_Logo.png" alt="GitHub Logo"></a>
+                    </div>
+                </div>    
+            </div>
+        </div>
         <div class="card-row">
             <section>
                 <h2>Recent Projects</h2>
-                <section>
+                <div class="card-container">
                     <a href="NutTree-HitB.html">
                         <div class="card">
                             <h3>Nut Tree Plaza</h3>
-                            <p>Holiday in the Breezeway Marketing Campaign 2023</p>
+                            <p>Holiday in the Breezeway</p>
                             <img src="images/Nut-Tree-Plaza-Thumbnail.jpg" alt="A thumbnail for Nut Tree Plaza projects, featuring a billboard for their Holiday in the Breezeway annual event.">
                         </div>
                     </a>   
@@ -59,7 +65,7 @@
                             <img src="images/Nut-Tree-Promo-Ad.jpg" alt="A close up image of a promotional ad in Sactown Magazine for Nut Tree Plaza.">
                         </div>
                     </a>
-                </section>
+                </div>
             </section>
         </div>
     </main>

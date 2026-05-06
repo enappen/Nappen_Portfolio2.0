@@ -6,6 +6,7 @@
     Black: #0D0D0D
     Light Sky Blue: #96bcd3
     Sky Blue: #87bceb
+    Dark Blue: #0f3f97
     Warm Tan: #F2D6B3
 
 */
@@ -44,23 +45,24 @@ main {
     background-color: #F2D6B3;
     padding: 1rem;
 }
-#HitB-main {
-    padding: 1rem;
-}
 
 h1 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
-
+h2 {
+    font-size: 2em;
+}
 
 /* --- Navigation --- */
+nav {
+    background-color: #87bceb; 
+}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    background-color: #87bceb;    
+    display: flex;   
 }
 nav ul li {
     justify-content: space-between;
@@ -75,10 +77,11 @@ nav a {
     background-color: #87bceb;
     padding: 0.5rem;
     display: block;
+    border: 2px solid #87bceb;
 }
 nav a:hover {
     background-color: #F0F1F2;
-    color: #87bceb;
+    color: #0f3f97;
     border: 2px solid #87bceb;
 }
 
@@ -89,14 +92,8 @@ nav a:hover {
 }
 footer {
     background-color: #87bceb;
-    color: rgb(15, 63, 151);
+    color: #0f3f97;
     font-weight: 500;
-}
-
-/* Contact Elements */
-.social-feature {
-    max-width: 55px;
-    padding: 1rem;
 }
 
 /* --- Banner --- */
@@ -115,6 +112,7 @@ footer {
 #banner-text {
     text-align: center;
     justify-content: center;
+    font-size: 2.3rem;
     padding: 1rem;
 }
 
@@ -122,7 +120,7 @@ footer {
 .card-row {
     margin: 1rem;
     background-color: #F0F1F2;
-    padding: 1rem;   
+    padding: 2rem;   
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .card {
@@ -150,57 +148,87 @@ footer {
     padding: 2rem;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
     background-color: #F0F1F2;
+    max-width: 700px;
+    margin: 1rem auto;
+    border-left:1vw solid #87bceb; 
+    border-right: 1vw solid #87bceb;
 }
 #self {
     max-width: 300px;
+    padding-top: 2rem;
 }
 
 /* Contact */
 #Contact {
     background-color: #F0F1F2;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 700px;
+    border-left:3vw solid #87bceb; 
+    border-right: 3vw solid #87bceb;
+}
+#Contact-Container {
+    justify-content: center;
+}
+#Contact h3 {
+    font-size: 5em;
+    text-align: center;
 }
 #social-feature {
     max-width: 55px;
+    padding: 1rem;
+}
+#Contact-Info {
+    justify-content: center;
+    text-align: center;
+    padding: 0.75rem;
+}
+#Contact-Info p {
+    font-size: 1.5em;
 }
 
 /* Holiday in the Breezeway Project */
-#HitB-packages, .Promo {
+#HitB-packages {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+#HitB-packages > div {
     padding: 2rem;
     box-sizing: border-box;
-}
-#HitB-packages img {
     flex: 1 1 300px;
     max-width: 400px;
+}
+#HitB-packages img {
+    max-width: 350px;
     width: 100%;
     height: auto;
-}
-#staged-content {
-    display: grid;
+    display: block;
 }
 #staged-content img {
-    max-width: 340px;
+    max-width: 300px;
     width: 100%;
     height: auto; 
 }
 
-/*  */
-.Promo-Concepts {
-    flex: 1 1 150px;
+/* Nut Tree - Promo */
+#promo {
+    display: flex;
+    flex-wrap: wrap;
+} 
+#Promo img {
     max-width: 300px;
     width: 100%;
     height: auto;
+}
+#promo-staged {
+    max-width: 600px;
 }
 
 /* Project Case Study Page Format */
 .project-page {
     background-color: #F0F1F2;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    max-width: 100%;
+    padding: 3rem;
 }
 .project-page img {
     max-width: 100%;
@@ -221,6 +249,10 @@ footer {
     max-width: 500px;
     width: 100%;
     height: auto;  
+}
+#logo-link {
+    color:#0f3f97;
+    
 }
 
 /* At Height Images */
@@ -245,20 +277,124 @@ footer {
     height: auto;
 }
 
+
+
+@media screen and (min-width: 530px) {
+    
+    /* Navigation */
+    nav {
+        display:inline-flex;
+        justify-content: center;
+    }
+    nav ul li {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    
+    /* Card Row */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .card {
+        flex: 1 1 260px;
+    }
+    
+}
+
+@media screen and (min-width: 760px) {
+    /* Contact */
+    #Contact {
+        margin: 1rem auto;
+        border-left: 8vw solid #87bceb; 
+        border-right: 8vw solid #87bceb;
+    }
+    #contact-containers {
+        display: flex;
+        margin: 1rem auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;  
+    }
+
+    /* About */
+    #about-container {
+       display: flex;
+       justify-content: space-between;
+    }
+    #self {
+        padding-left: 2rem;
+    }
+
+    /* Holiday in the Breezeway */
+    #HitB-container {
+        display: flex;
+    }
+    #staged-content {
+        padding-top: 3rem;
+        min-width: 200px;
+    }
+    #HitB-main, .project-page {
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 870px){
+    #about-me {
+        border-left: 2vw solid #87bceb; 
+        border-right: 2vw solid #87bceb;
+    }
+}
+
 @media screen and (min-width: 1000px) {
 
+    /* Card Row */
     .card-row {
         display: flex;
         flex-wrap: wrap;
-    }
+        max-width: 1095px;
+        margin: 1rem auto;
+    } 
 
+    #Contact, #about-me {
+        border-left: 13vw solid #87bceb; 
+        border-right: 13vw solid #87bceb;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /* Banner */
     #banner-container {
         display: flex;
-        justify-content: center;
+        max-width: 1160px;
+        margin: 1rem auto;
+    }
+    #banner {
+        justify-content: flex-start;
     }
     #banner-text {
         text-align: center;
+        align-items: center;
         justify-content: center;
+        max-width: 300px;
+        margin:auto;
     }
 
+    /* About Me */
+    #about-me {
+        border-left: 13vw solid #87bceb; 
+        border-right: 13vw solid #87bceb;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #Contact, #about-me {
+        border-left: 11vw solid #87bceb; 
+        border-right: 11vw solid #87bceb;
+    }
 }
