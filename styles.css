@@ -252,7 +252,6 @@ footer {
 }
 #logo-link {
     color:#0f3f97;
-    
 }
 
 /* At Height Images */
@@ -345,6 +344,7 @@ footer {
 }
 
 @media screen and (min-width: 870px){
+    /* About */
     #about-me {
         border-left: 2vw solid #87bceb; 
         border-right: 2vw solid #87bceb;
@@ -361,6 +361,7 @@ footer {
         margin: 1rem auto;
     } 
 
+    /* Contact and About */
     #Contact, #about-me {
         border-left: 13vw solid #87bceb; 
         border-right: 13vw solid #87bceb;
@@ -393,6 +394,7 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
+    /* Contact and About */
     #Contact, #about-me {
         border-left: 11vw solid #87bceb; 
         border-right: 11vw solid #87bceb;
