@@ -177,7 +177,7 @@ footer {
     font-size: 2.25rem;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
 }
 #social-feature {
     max-width: 55px;
@@ -187,6 +187,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 0.5rem;
+    box-sizing: border-box;
 }
 #Contact-Info p {
     font-size: 1.15rem;
@@ -310,6 +311,7 @@ footer {
         flex: 1 1 260px;
     }
 
+    /* Contact */
     #Contact h3 {
     font-size: 4rem;
     }
