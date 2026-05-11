@@ -62,13 +62,10 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;   
 }
 nav ul li {
     justify-content: space-between;
     letter-spacing: 0.5px;
-    flex: 1;
-    text-align: center;
 }
 nav a {
     text-decoration: none;
@@ -288,9 +285,14 @@ footer {
         display:inline-flex;
         justify-content: center;
     }
+    nav ul {
+        display: flex;
+    }
     nav ul li {
         padding-right: 1rem;
         padding-left: 1rem;
+        flex: 1;
+        text-align: center;
     }
     
     /* Card Row */
