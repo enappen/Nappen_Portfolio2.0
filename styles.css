@@ -174,7 +174,7 @@ footer {
     justify-content: center;
 }
 #Contact h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 #social-feature {
@@ -307,6 +307,10 @@ footer {
     }
     .card {
         flex: 1 1 260px;
+    }
+
+    #Contact h3 {
+    font-size: 4rem;
     }
     
 }
