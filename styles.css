@@ -87,7 +87,7 @@ nav a:hover {
 /* Footer Elements */
 .social-media img {
     max-width: 30px;
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 footer {
     background-color: #87bceb;
@@ -190,7 +190,7 @@ footer {
     max-width: 100%;
 }
 #Contact-Info p {
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 /* Holiday in the Breezeway Project */
@@ -316,6 +316,10 @@ footer {
     font-size: 4rem;
     }
     
+    /* Footer Elements */
+    .social-media img {
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (min-width: 760px) {
