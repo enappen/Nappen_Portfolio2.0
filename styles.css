@@ -188,6 +188,7 @@ footer {
     text-align: center;
     padding: 0.5rem;
     box-sizing: border-box;
+    max-width: 100%;
 }
 #Contact-Info p {
     font-size: 1.15rem;
