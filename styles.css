@@ -179,6 +179,7 @@ footer {
 }
 #social-feature {
     max-width: 55px;
+    width: 100%;
     padding: 1rem;
 }
 #Contact-Info {
