@@ -132,8 +132,11 @@ footer {
     background-color: #F0F1F2;
 }
 .card img {
-    width: 250px; 
+    max-width: 250px; 
     object-position: center;
+    width: 100%;
+    height: auto; 
+    display: block;
 }
 .card-row a {
     text-decoration: none;
